@@ -105,7 +105,7 @@ REJECT = {
 ### Preprocessing
 
 ```{python}
-#| eval: false # set this to false if you don't want preprocessing to recompute - marcus here, i set it to false since i allready processed the participants; changing it to 'true' does the loading and covnersion from file 'raw' to 'processsed' - i changed it to false, so it doesnt do this over and over, since it has allready been done... re-do it/set it to 'true' when you change ^^^ or idk.
+#| eval: true # set this to false if you don't want preprocessing to recompute - marcus here, i set it to false since i allready processed the participants; changing it to 'true' does the loading and covnersion from file 'raw' to 'processsed' - i changed it to false, so it doesnt do this over and over, since it has allready been done... re-do it/set it to 'true' when you change ^^^ or idk.
 #| output: false # this suppresses any output
 
 for raw_file in RAW_PATH.glob("*_raw.fif.gz"):
