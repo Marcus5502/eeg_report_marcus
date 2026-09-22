@@ -14,4 +14,4 @@ data/
 *.docx
 *.xlsx
 *.pdf
-*_ipynb
+*_ipynb*
