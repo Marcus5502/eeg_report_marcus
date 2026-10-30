@@ -1,5 +1,5 @@
 ---
-title: "ERP analysis report (customise title to fit your topic)"
+title: "The N170 Response to Faces and Cars: An ERP CORE Analysis Report"
 author: "Marcus Skurray"
 date: today
 format: 
@@ -33,6 +33,7 @@ from scripts.preproc import preprocess
 # Note that we now include a folder for saving preprocessed data
 RAW_PATH = Path("data/raw")
 PROCESSED_PATH = Path("data/processed")
+
 ```
 
 ## Introduction
@@ -76,9 +77,7 @@ FILTER_SETTINGS = {
     "high_cutoff": 30.0
 }
 
-# This setting re-references to averaged mastoids (P9/P10 as proxy) 
-# To use an average reference, replace ["P9", "P10"] with None 
-REFERENCE = ["P9","P10"]
+REFERENCE = None
 
 ```
 
@@ -86,13 +85,13 @@ REFERENCE = ["P9","P10"]
 
 ```{python}
 TMIN = -0.2 # epoch start relative to critical event
-TMAX = 1.0  # epoch end relative to critical event
-# will change ^^^ i believe
+TMAX = 0.8  # epoch end relative to critical event
+
 BASELINE = (-0.2,0) # baseline interval
-# mabye this too? check later
+
 # critical conditions for averaging and epoching
-CONDITIONS = ["stimulus/compatible", "stimulus/incompatible"]
-# may?
+CONDITIONS = ["stimulus/face", "stimulus/car"]
+
 REJECT = {
     "eeg": 150e-6,
     "eog": 250e-6
@@ -105,7 +104,7 @@ REJECT = {
 ### Preprocessing
 
 ```{python}
-#| eval: true # set this to false if you don't want preprocessing to recompute - marcus here, i set it to false since i allready processed the participants; changing it to 'true' does the loading and covnersion from file 'raw' to 'processsed' - i changed it to false, so it doesnt do this over and over, since it has allready been done... re-do it/set it to 'true' when you change ^^^ or idk.
+#| eval: true # set this to false if you don't want preprocessing to recompute
 #| output: false # this suppresses any output
 
 for raw_file in RAW_PATH.glob("*_raw.fif.gz"):
@@ -179,10 +178,10 @@ Set the parameters for the specified analysis window, which will include dotted 
 Note: for some components, @kappenman2021 refer to two electrode sites. If this is the case for your chosen component, the analysis requires a consideration of lateralisation; please make an appointment to discuss the required analysis tweaks with Ina.
 
 ```{python}
-selected_electrode = "FCz"
-plot_title = "Grand average for N2: Incompatible versus compatible Flanker stimuli"
-analysis_window_start = 0.2
-analysis_window_end = 0.4
+selected_electrode = "PO8"
+plot_title = "Grand average N170: Faces versus Cars"
+analysis_window_start = 0.110
+analysis_window_end = 0.150
 
 plot_evokeds(grand_avs, picks = selected_electrode, invert_y = True, title = plot_title, vlines = [analysis_window_start, analysis_window_end])
 
