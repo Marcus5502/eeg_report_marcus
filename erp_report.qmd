@@ -97,6 +97,7 @@ REJECT = {
     "eog": 250e-6
 }
 
+EXCLUDE = ["001", "006", "016"]
 ```
 
 ## Data analysis
@@ -116,7 +117,6 @@ for raw_file in RAW_PATH.glob("*_raw.fif.gz"):
     raw = SimpleRaw(raw_file)
 
     # preprocess raw file
-    # note how we draw on a custom preprocessing function here
     processed = preprocess(raw, 
                             reref_params = REFERENCE, 
                             filter_low_cutoff = FILTER_SETTINGS["low_cutoff"], 
@@ -124,8 +124,9 @@ for raw_file in RAW_PATH.glob("*_raw.fif.gz"):
     
     processed.save(PROCESSED_PATH / f"{subj_ID}_raw.fif.gz", overwrite = True)
 
-
 ```
+
+Raw EEG files were preprocessed using the analysis pipeline developed throughout the course, re-refferencing the data using an avarage referenceped throughout the course later adapting parameters for the N170 referenced against the average refrence for the N170following the previously outlinned preprocessing steps in the method's section.
 
 ### Epoching and averaging
 
@@ -140,6 +141,16 @@ for cond in CONDITIONS:
 
 for processed_file in PROCESSED_PATH.glob("*_raw.fif.gz"):
     
+    # extract subject number
+    subj_ID = processed_file.stem.split("_")[0]
+
+    #check to see if participant should be excluded
+    if subj_ID in EXCLUDE:
+        # if participant is in the exclusion list
+        # skip the rest of the loop for this participant
+        # and move on to the next participant
+        continue
+
     # read in preprocessed file
     processed = SimpleRaw(processed_file)
 
@@ -177,11 +188,14 @@ Plot the electrode deemed most representative for the effect by @kappenman2021.
 Set the parameters for the specified analysis window, which will include dotted vertical lines marking the analysis window on the plot.
 Note: for some components, @kappenman2021 refer to two electrode sites. If this is the case for your chosen component, the analysis requires a consideration of lateralisation; please make an appointment to discuss the required analysis tweaks with Ina.
 
+#### **Figure 1**  
+
 ```{python}
+
 selected_electrode = "PO8"
 plot_title = "Grand average N170: Faces versus Cars"
-analysis_window_start = 0.110
-analysis_window_end = 0.150
+analysis_window_start = 0.136
+analysis_window_end = 0.176
 
 plot_evokeds(grand_avs, picks = selected_electrode, invert_y = True, title = plot_title, vlines = [analysis_window_start, analysis_window_end])
 
@@ -193,6 +207,10 @@ plot_evokeds(grand_avs, picks = selected_electrode, invert_y = True, title = plo
 Provide a brief discussion of the effect that you observed. Were you able to replicate the ERP component as observed by @kappenman2021? If not, what was different in your grand average ERP? 
 
 What did you learn by applying the analysis process to a new dataset?
+
+## Statement of use of Generative AI
+
+Generative AI was not used for the creation of this project. 
 
 ## References
 
