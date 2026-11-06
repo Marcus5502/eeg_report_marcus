@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Marcus Skurray">
-<meta name="dcterms.date" content="2026-11-05">
+<meta name="dcterms.date" content="2026-11-06">
 
 <title>The N170 Response to Faces and Cars: An ERP CORE Analysis Report</title>
 <style>
@@ -2229,11 +2229,7 @@ vertical-align: -.125em;
    
   <ul>
   <li><a href="#setup" id="toc-setup" class="nav-link active" data-scroll-target="#setup">Setup</a></li>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a>
-  <ul class="collapse">
-  <li><a href="#intro-subheading-1" id="toc-intro-subheading-1" class="nav-link" data-scroll-target="#intro-subheading-1">Intro subheading 1</a></li>
-  <li><a href="#intro-subheading-2" id="toc-intro-subheading-2" class="nav-link" data-scroll-target="#intro-subheading-2">Intro subheading 2</a></li>
-  </ul></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
   <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods">Methods</a>
   <ul class="collapse">
   <li><a href="#participants" id="toc-participants" class="nav-link" data-scroll-target="#participants">Participants</a></li>
@@ -2278,7 +2274,7 @@ vertical-align: -.125em;
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">November 5, 2026</p>
+      <p class="date">November 6, 2026</p>
     </div>
   </div>
   
@@ -2292,7 +2288,7 @@ vertical-align: -.125em;
 
 <section id="setup" class="level2">
 <h2 class="anchored" data-anchor-id="setup">Setup</h2>
-<div id="bfaabb87" class="cell" data-execution_count="1">
+<div id="e95ef0e6" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Specify the required imports for your analysis</span></span>
@@ -2304,7 +2300,7 @@ vertical-align: -.125em;
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scripts.preproc <span class="im">import</span> preprocess</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
-<div id="b592bd2c" class="cell" data-execution_count="2">
+<div id="2298bcc4" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Specify the required paths for your analysis</span></span>
@@ -2316,36 +2312,30 @@ vertical-align: -.125em;
 </section>
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>Adding some text to the begining of the intro, to demonstrate a comit and push</p>
-<p>Provide an introduction to the ERP component of your choice here. This should include a brief literature review – see report instructions for details. Use appropriate subheadings as required: adapt the ones below, create new ones or delete as needed.</p>
-<section id="intro-subheading-1" class="level3">
-<h3 class="anchored" data-anchor-id="intro-subheading-1">Intro subheading 1</h3>
-</section>
-<section id="intro-subheading-2" class="level3">
-<h3 class="anchored" data-anchor-id="intro-subheading-2">Intro subheading 2</h3>
-</section>
+<p>The N170 is a negative-going event related potential (ERP) component measured using electroencephalography (EEG), beginning around 130 ms with a typical peak latency of approximately 170 ms following stimulus onset <span class="citation" data-cites="cashon2015 prieto2011">(<a href="#ref-cashon2015" role="doc-biblioref">Cashon and Holt 2015</a>; <a href="#ref-prieto2011" role="doc-biblioref">Prieto et al. 2011</a>)</span>. The N170 is commonly referred to as a face-sensitive response, eliciting a larger negative deflection in wave amplitudes to faces than non-face objects <span class="citation" data-cites="eimer2011">(<a href="#ref-eimer2011" role="doc-biblioref">Eimer 2011</a>)</span>. The N170’s topography is most apparent over lateral posterior occipito-temporal scalp regions, and commonly exhibits right hemispheric lateralisation, with greater amplitudes over the right hemisphere than left <span class="citation" data-cites="deng2025 kropotov2016 prieto2011">(<a href="#ref-deng2025" role="doc-biblioref">Deng et al. 2025</a>; <a href="#ref-kropotov2016" role="doc-biblioref">Kropotov 2016</a>; <a href="#ref-prieto2011" role="doc-biblioref">Prieto et al. 2011</a>)</span>. This rightward bias may reflect the broader organisation of cortical face-processing networks, with neuroimaging evidence implicating the right fusiform face area in facial processing, while the left fusiform regions are associated with visual word-form processing <span class="citation" data-cites="prieto2011 vekony2017">(<a href="#ref-prieto2011" role="doc-biblioref">Prieto et al. 2011</a>; <a href="#ref-vekony2017" role="doc-biblioref">Vékony and Csifcsák 2017</a>)</span>.</p>
+<p><span class="citation" data-cites="srebro1985">Srebro (<a href="#ref-srebro1985" role="doc-biblioref">1985</a>)</span> initially linked early EEG responses to facial perception, later explored by <span class="citation" data-cites="botzel1995">Bötzel et al. (<a href="#ref-botzel1995" role="doc-biblioref">1995</a>)</span> who identified prominent negative peaks at posterior-temporal electrodes at approximately 175 ms following face presentation. Dipole source localisation suggested that face perception may involve distributed sequential activation of occipital, lateral temporal and mesio-temporal brain structures. <span class="citation" data-cites="bentin1996">Bentin et al. (<a href="#ref-bentin1996" role="doc-biblioref">1996</a>)</span> provided greater detail, reporting a negative potential latency of 172 ms, termed the N170. The response to facial stimuli was largest over posterior-temporal regions, particularly in the right hemisphere. Furthermore, isolated eyes elicited a larger N170 than whole faces, while isolated lips or noses elicited smaller ERP responses, suggesting the N170 may be modulated by specific facial features rather than the whole face alone. Bentin et al.’s<span class="citation" data-cites="bentin1996">(<a href="#ref-bentin1996" role="doc-biblioref">1996</a>)</span> findings suggest the N170 reflects early detection and structural encoding of faces rather than facial identity recognition. Expanding on Bötzel et al.’s <span class="citation" data-cites="botzel1995">(<a href="#ref-botzel1995" role="doc-biblioref">1995</a>)</span> earlier source-localisation findings, <span class="citation" data-cites="gao2019">Gao et al. (<a href="#ref-gao2019" role="doc-biblioref">2019</a>)</span> utilised high-density ERP source localisation and fMRI, identifying the middle and posterior fusiform gyri as primary neural sources of the face-sensitive N170.</p>
+<p>Continuing Bentin et al.’s <span class="citation" data-cites="bentin1996">(<a href="#ref-bentin1996" role="doc-biblioref">1996</a>)</span> early structural interpretations, the N170 is commonly associated with early configural face processing, particularly the spatial relationship and configuration of facial features <span class="citation" data-cites="eimer2011 pascalis2020">(<a href="#ref-eimer2011" role="doc-biblioref">Eimer 2011</a>; <a href="#ref-pascalis2020" role="doc-biblioref">Pascalis et al. 2020</a>)</span>. However, the exact underlying neural mechanisms remain debated, particularly in regard to the face inversion effect. Face-inversion disrupts normal configural processing, with greater dependence on individual featural processing, rather than spatial configuration between features <span class="citation" data-cites="pascalis2020">(<a href="#ref-pascalis2020" role="doc-biblioref">Pascalis et al. 2020</a>)</span>, with inverted faces producing larger N170 amplitudes and delayed latencies than upright faces <span class="citation" data-cites="cashon2015 eimer2011">(<a href="#ref-cashon2015" role="doc-biblioref">Cashon and Holt 2015</a>; <a href="#ref-eimer2011" role="doc-biblioref">Eimer 2011</a>)</span>. The delayed latency reflects disrupted configural processing <span class="citation" data-cites="eimer2011 rossion1999">(<a href="#ref-eimer2011" role="doc-biblioref">Eimer 2011</a>; <a href="#ref-rossion1999" role="doc-biblioref">Rossion et al. 1999</a>)</span>, while the increased amplitude has two broad interpretations <span class="citation" data-cites="sadeh2010">(<a href="#ref-sadeh2010" role="doc-biblioref">Sadeh and Yovel 2010</a>)</span>. <span class="citation" data-cites="rossion1999">Rossion et al. (<a href="#ref-rossion1999" role="doc-biblioref">1999</a>)</span> suggest that inversion increases activity within the same processing pathways implicated in upright face processing, due to the increased processing difficulty. Alternatively, <span class="citation" data-cites="sadeh2010">Sadeh and Yovel (<a href="#ref-sadeh2010" role="doc-biblioref">2010</a>)</span> suggest that inversion recruits additional neural processes, such as object-general and eye-specific processing, which may contribute to the increased amplitude. Eye-specific processing’s involvement is consistent with Bentin et al.’s <span class="citation" data-cites="bentin1996">(<a href="#ref-bentin1996" role="doc-biblioref">1996</a>)</span> earlier findings of larger N170 amplitudes to isolated eyes than whole faces. <span class="citation" data-cites="huang2026">Huang et al. (<a href="#ref-huang2026" role="doc-biblioref">2026</a>)</span> further suggested that distinct neural populations contribute to the N170, noting that some populations more sensitive to inverted faces may process salient features, such as the eyes, while others are tuned to upright faces, engaging in configural processing and high-level facial image pattern analysis, supporting the interpretation that the N170 may reflect multiple underlying neural processes rather than configural processing alone.</p>
 </section>
 <section id="methods" class="level2">
 <h2 class="anchored" data-anchor-id="methods">Methods</h2>
-<p>Complete the following subsections using the information from <span class="citation" data-cites="kappenman2021">Kappenman et al. (<a href="#ref-kappenman2021" role="doc-biblioref">2021</a>)</span>. Don’t forget to mention that the data are from the ERP CORE resource under a Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).</p>
 <section id="participants" class="level3">
 <h3 class="anchored" data-anchor-id="participants">Participants</h3>
-<p>Provide information on the number of participants and their demographics (sex, age, handedness) as well as the inclusion criteria for the study.</p>
+<p><span class="citation" data-cites="kappenman2021">Kappenman et al. (<a href="#ref-kappenman2021" role="doc-biblioref">2021</a>)</span> recruited 40 participants (aged 18-30) from the University of California, Davis community (15 male, 25 female), with a mean age of 21.5 years (SD = 2.87). Participants had native English competence, normal colour perception, normal to corrected vision, and no self-reported history of neurological disease or injury. Thirty-eight participants were right-handed. <span class="citation" data-cites="kappenman2021">Kappenman et al. (<a href="#ref-kappenman2021" role="doc-biblioref">2021</a>)</span> excluded participants if artifacts were identified on more than 25% of trials, if task accuracy was below 75%, or if fewer than 50% of trials remained in any one condition. Following these exclusion criteria, participants 001 and 016 were omitted because fewer than 50% of face trials remained following artifact rejection, while participant 006 was omitted because artifacts were identified on more than 25% of trials. This resulted in a final N170 sample of 37 participants aged 18-30 (13 male, 24 female), with a mean age of 21.57 years (SD = 2.97), 35 of whom were right-handed, while two were left-handed.</p>
 </section>
 <section id="procedure" class="level3">
 <h3 class="anchored" data-anchor-id="procedure">Procedure</h3>
-<p>Describe the task that participants completed. This should be tailored to the task / component that you chose to analyse.</p>
+<p>Data were obtained from Kappenman et al.’s <span class="citation" data-cites="kappenman2021">(<a href="#ref-kappenman2021" role="doc-biblioref">2021</a>)</span> ERP CORE resource, available under the Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) licence. The N170 data were collected following a face perception task adapted by <span class="citation" data-cites="kappenman2021">Kappenman et al. (<a href="#ref-kappenman2021" role="doc-biblioref">2021</a>)</span> from <span class="citation" data-cites="rossion2011">Rossion and Caharel (<a href="#ref-rossion2011" role="doc-biblioref">2011</a>)</span>. Each trial involved participants viewing and responding to centrally positioned images of either a face, car, scrambled face, or scrambled car, determining if the stimulus was either a texture (scrambled face or scrambled car), or an object (face or car). <span class="citation" data-cites="kappenman2021">Kappenman et al. (<a href="#ref-kappenman2021" role="doc-biblioref">2021</a>)</span> compared N170 ERP responses to faces and cars.</p>
 </section>
 <section id="eeg-recording" class="level3">
 <h3 class="anchored" data-anchor-id="eeg-recording">EEG recording</h3>
-<p>Describe the EEG recording parameters: amplifier and type of cap used, electrode positions, CMS / DRL electrode positions, EOG electrode positions, and filter parameters.</p>
+<p>Continuous EEG was recorded using a BioSemi ActiveTwo system, with 30 active scalp electrodes mounted in an elastic cap. The electrode positioning followed the International 10/20 system (FP1, F3, F7, FC3, C3, C5, P3, P7, P9, PO7, PO3, O1, Oz, Pz, CPz, FP2, Fz, F4, F8, FC4, FCz, Cz, C4, C6, P4, P8, P10, PO8, PO4, O2). The common mode sense (CMS) electrode was located at PO1, and the driven right leg (DRL) at PO2. Horizontal electrooculograms were positioned at the lateral to the external canthus of each eye, while the vertical electrooculogram were positioned below the right eye. Signals were low-pass filtered using a fifth order sinc filter with a half-power cutoff of 204.8 Hz and later digitised at 1024 Hz with 24-bit resolution <span class="citation" data-cites="kappenman2021">(<a href="#ref-kappenman2021" role="doc-biblioref">Kappenman et al. 2021</a>)</span>.</p>
 </section>
 <section id="analysis-parameters" class="level3">
 <h3 class="anchored" data-anchor-id="analysis-parameters">Analysis parameters</h3>
-<p>Choose these parameters appropriate for the component that you are analysing. Use those recommended by <span class="citation" data-cites="kappenman2021">Kappenman et al. (<a href="#ref-kappenman2021" role="doc-biblioref">2021</a>)</span>; see their Table 1. This holds for all parameters except for the filter parameters; for these, you can stick to the example parameters provided below. Describe the parameters in this section and also modify the code accordingly</p>
+<p>For the present N170 analysis, EEG data were re-referenced using an average reference, then filtered between 0.1 to 30 Hz, mirroring Kappenman et al.’s <span class="citation" data-cites="kappenman2021">(<a href="#ref-kappenman2021" role="doc-biblioref">2021</a>)</span> N170 average-reference approach. Epoch parameters were stimulus-locked ranging from -200 to 800 ms relative to onset, with a -200 to 0 ms baseline interval. EEG trials exceeding 150 µV (150e-6 V), and EOG exceeding 250 µV (250e-6 V) were rejected. Face and car trials were independently averaged, with grand-average activity examined at PO8, following Kappenman et al.’s <span class="citation" data-cites="kappenman2021">(<a href="#ref-kappenman2021" role="doc-biblioref">2021</a>)</span> recommended N170 measurement window of 110-150 ms. Following the exclusion criteria, three participants were omitted prior to averaging, resulting in a final analysis sample of 37 participants. To account for LCD monitor delay, <span class="citation" data-cites="kappenman2021">Kappenman et al. (<a href="#ref-kappenman2021" role="doc-biblioref">2021</a>)</span> corrected event codes, while the present analysis shifted the measurement window by 26 ms, from 110-150 ms to 136-176 ms.</p>
 <section id="preprocessing-parameters" class="level4">
 <h4 class="anchored" data-anchor-id="preprocessing-parameters">Preprocessing parameters</h4>
-<div id="e9e4058e" class="cell" data-execution_count="3">
+<div id="5e2f59a6" class="cell" data-execution_count="3">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>FILTER_SETTINGS <span class="op">=</span> {</span>
@@ -2359,7 +2349,7 @@ vertical-align: -.125em;
 </section>
 <section id="epoching-parameters" class="level4">
 <h4 class="anchored" data-anchor-id="epoching-parameters">Epoching parameters</h4>
-<div id="7b6d5615" class="cell" data-execution_count="4">
+<div id="544dda53" class="cell" data-execution_count="4">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>TMIN <span class="op">=</span> <span class="op">-</span><span class="fl">0.2</span> <span class="co"># epoch start relative to critical event</span></span>
@@ -2385,7 +2375,7 @@ vertical-align: -.125em;
 <h2 class="anchored" data-anchor-id="data-analysis">Data analysis</h2>
 <section id="preprocessing" class="level3">
 <h3 class="anchored" data-anchor-id="preprocessing">Preprocessing</h3>
-<div id="939bdf3b" class="cell" data-execution_count="5">
+<div id="57110b37" class="cell" data-execution_count="5">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> raw_file <span class="kw">in</span> RAW_PATH.glob(<span class="st">&quot;*_raw.fif.gz&quot;</span>):</span>
@@ -2405,11 +2395,11 @@ vertical-align: -.125em;
 <span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>    processed.save(PROCESSED_PATH <span class="op">/</span> <span class="ss">f&quot;</span><span class="sc">{</span>subj_ID<span class="sc">}</span><span class="ss">_raw.fif.gz&quot;</span>, overwrite <span class="op">=</span> <span class="va">True</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
-<p>Raw EEG files were preprocessed using the analysis pipeline developed throughout the course, re-refferencing the data using an avarage referenceped throughout the course later adapting parameters for the N170 referenced against the average refrence for the N170following the previously outlinned preprocessing steps in the method’s section.</p>
+<p>Raw EEG data were pre-processed using the analysis pipeline developed throughout the course, re-referencing the data using an average reference and applying a band-pass filter between 0.1 and 30 Hz.</p>
 </section>
 <section id="epoching-and-averaging" class="level3">
 <h3 class="anchored" data-anchor-id="epoching-and-averaging">Epoching and averaging</h3>
-<div id="56f7777b" class="cell" data-execution_count="6">
+<div id="3c8abe3d" class="cell" data-execution_count="6">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># initialise empty dictionary to hold single-subject averages</span></span>
@@ -2445,10 +2435,11 @@ vertical-align: -.125em;
 <span id="cb6-31"><a href="#cb6-31" aria-hidden="true" tabindex="-1"></a>        ss_avs[cond].append(av)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
+<p>Processed EEG data were epoched around stimulus-locked events, ranging from -200 ms before stimulus onset to 800 ms following onset, with -200 to 0 ms used as the baseline interval. EEG or EOG trials exceeding their aforementioned thresholds (150 µV and 250 µV, respectively) were excluded. Following participant exclusion, face and car trials were separated and independently averaged for each of the 37 final participants.</p>
 </section>
 <section id="grand-average" class="level3">
 <h3 class="anchored" data-anchor-id="grand-average">Grand average</h3>
-<div id="bc45fb1f" class="cell" data-execution_count="7">
+<div id="e1e534c9" class="cell" data-execution_count="7">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># create an empty dict to hold our grand averages</span></span>
@@ -2465,10 +2456,13 @@ vertical-align: -.125em;
 <h2 class="anchored" data-anchor-id="results">Results</h2>
 <section id="grand-average-expected-effect" class="level3">
 <h3 class="anchored" data-anchor-id="grand-average-expected-effect">Grand average: expected effect</h3>
-<p>Plot the electrode deemed most representative for the effect by <span class="citation" data-cites="kappenman2021">Kappenman et al. (<a href="#ref-kappenman2021" role="doc-biblioref">2021</a>)</span>. Set the parameters for the specified analysis window, which will include dotted vertical lines marking the analysis window on the plot. Note: for some components, <span class="citation" data-cites="kappenman2021">Kappenman et al. (<a href="#ref-kappenman2021" role="doc-biblioref">2021</a>)</span> refer to two electrode sites. If this is the case for your chosen component, the analysis requires a consideration of lateralisation; please make an appointment to discuss the required analysis tweaks with Ina.</p>
+<p>Averages across the final 37 participants were combined, forming grand-average ERP responses for both the face and car stimulus conditions.</p>
+<p>Figure 1 visualises the N170 grand average ERPs for face and car stimuli measured at PO8 using the adjusted measurement window of 136-176 ms. Within this time window, both conditions begin at positive amplitudes before crossing baseline, after which both conditions show a sharp negative-going deflection. The face condition shows a slightly larger and earlier negative peak than the car condition, whose peak occurs slightly outside the end of the 176 ms time window.</p>
+<p>Before the time window, both conditions fluctuate before showing a positive-going deflection, with the face condition peaking sooner than the car condition, whose positive peak occurs near the beginning of the time window. The face condition then returns toward baseline earlier and more sharply than the car condition, with both waveforms becoming increasingly separated.</p>
+<p>Following their negative peaks inside the time window for faces and slightly outside the time window for cars, both waveforms follow similar positive-going deflections, passing baseline, and continuing to a large positive peak, before gradually fluctuating and returning toward baseline and later crossing into negative voltages. Both waveforms continued fluctuating in later portions of the epoch recording; however, these occurred beyond the N170 time window and were not examined further.</p>
 <section id="figure-1" class="level4">
 <h4 class="anchored" data-anchor-id="figure-1"><strong>Figure 1</strong></h4>
-<div id="78395249" class="cell" data-execution_count="8">
+<div id="4259149d" class="cell" data-execution_count="8">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>selected_electrode <span class="op">=</span> <span class="st">&quot;PO8&quot;</span></span>
@@ -2491,22 +2485,68 @@ vertical-align: -.125em;
 </section>
 <section id="discussion-and-reflection" class="level2">
 <h2 class="anchored" data-anchor-id="discussion-and-reflection">Discussion and reflection</h2>
-<p>Provide a brief discussion of the effect that you observed. Were you able to replicate the ERP component as observed by <span class="citation" data-cites="kappenman2021">Kappenman et al. (<a href="#ref-kappenman2021" role="doc-biblioref">2021</a>)</span>? If not, what was different in your grand average ERP?</p>
-<p>What did you learn by applying the analysis process to a new dataset?</p>
+<p>The present study broadly replicated Kappenman et al.’s <span class="citation" data-cites="kappenman2021">(<a href="#ref-kappenman2021" role="doc-biblioref">2021</a>)</span> ERP grand-average findings, with the face condition producing a slightly larger and earlier negative N170 peak than the car condition at PO8. <span class="citation" data-cites="kappenman2021">Kappenman et al. (<a href="#ref-kappenman2021" role="doc-biblioref">2021</a>)</span> similarly reported a larger and earlier N170 for faces than cars, most pronounced over the right inferotemporal region.</p>
+<p><span class="citation" data-cites="kappenman2021">Kappenman et al. (<a href="#ref-kappenman2021" role="doc-biblioref">2021</a>)</span> corrected event codes for LCD delay, while the present analysis shifted the N170 window by 26 ms from 110-150 ms to 136-176 ms. Within this adjusted window, the face condition peaked, while the car condition peaked slightly outside the upper boundary, reflecting the latency differences between conditions, consistent with <span class="citation" data-cites="kappenman2021">Kappenman et al. (<a href="#ref-kappenman2021" role="doc-biblioref">2021</a>)</span>, and wider literature indicating larger negative N170 responses to faces than non-face objects <span class="citation" data-cites="bentin1996 eimer2011">(<a href="#ref-bentin1996" role="doc-biblioref">Bentin et al. 1996</a>; <a href="#ref-eimer2011" role="doc-biblioref">Eimer 2011</a>)</span>.</p>
+<p>Small amplitude and waveform differences may reflect preprocessing differences. <span class="citation" data-cites="kappenman2021">Kappenman et al. (<a href="#ref-kappenman2021" role="doc-biblioref">2021</a>)</span> applied ICA-based artifact correction, participant-specific thresholds, noisy channel interpolation and additional 20 Hz low-pass filtering, potentially smoothing their grand-average waveforms. Comparatively, the present analysis employed a simplified pipeline, including average re-referencing, 0.1-30 Hz filtering, fixed rejection criteria, epoching, baseline correction and participant exclusion. Despite supporting larger N170 responses to faces than non-face objects, the findings provide limited insight into whether the effects reflect featural, configural or object-processing mechanisms, which future research should aim to clarify.</p>
+<p>Applying and modifying the EEG pipeline for N170 analysis helped develop my understanding of preprocessing, epoching, and averaging, and their influence on the final grand average and its interpretation. Adapting small methodological decisions, from exclusion criteria and filter cutoffs to shifting measurement windows, further demonstrated their impact on analysis. Learning how to transform raw EEG data into finalised grand-average ERPs improved my comprehension of EEG analysis and interpretation, providing knowledge transferable to future research. Rather than relying solely on another study’s discussion and conclusions, applying the analysis myself deepened my understanding of how such conclusions are reached.</p>
 </section>
 <section id="statement-of-use-of-generative-ai" class="level2">
 <h2 class="anchored" data-anchor-id="statement-of-use-of-generative-ai">Statement of use of Generative AI</h2>
-<p>Generative AI was not used for the creation of this project.</p>
+<p>AI (ChatGPT; OpenAI) was used to support the development of this report, primarily for troubleshooting and understanding Python/Quarto/Markdown/YAML code, checking that EndNote’s reference output matches the .bib file, alongside understanding and learning how to reference with Quarto using Week 10 course material, as I was absent that week. Minor proofreading and grammar correction were also used; however majority of suggestions were rejected, rather opting to use word’s inbuilt processes. All code used reflects the continually developed EEG pipeline created in class, rather than code generated by AI.</p>
 </section>
-<section id="references" class="level2">
-<h2 class="anchored" data-anchor-id="references">References</h2>
-<p><em>Note: this document is set up to automatically generate a reference list via a bib file. We will look at how to do this in the week 9 workshop.</em></p>
+<section id="references" class="level2 unnumbered">
+
 
 </section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-bentin1996" class="csl-entry" role="listitem">
+Bentin, S., T. Allison, A. Puce, E. Perez, and G. McCarthy. 1996. <span>“Electrophysiological Studies of Face Perception in Humans.”</span> Journal Article. <em>Journal of Cognitive Neuroscience</em> 8 (6): 551–65. <a href="https://doi.org/10.1162/jocn.1996.8.6.551">https://doi.org/10.1162/jocn.1996.8.6.551</a>.
+</div>
+<div id="ref-botzel1995" class="csl-entry" role="listitem">
+Bötzel, K., S. Schulze, and S. R. Stodieck. 1995. <span>“Scalp Topography and Analysis of Intracranial Sources of Face-Evoked Potentials.”</span> Journal Article. <em>Experimental Brain Research</em> 104 (1): 135–43. <a href="https://doi.org/10.1007/BF00229863">https://doi.org/10.1007/BF00229863</a>.
+</div>
+<div id="ref-cashon2015" class="csl-entry" role="listitem">
+Cashon, C. H., and N. A. Holt. 2015. <span>“Developmental Origins of the Face Inversion Effect.”</span> Journal Article. <em>Advances in Child Development and Behavior</em> 48: 117–50. <a href="https://doi.org/10.1016/bs.acdb.2014.11.008">https://doi.org/10.1016/bs.acdb.2014.11.008</a>.
+</div>
+<div id="ref-deng2025" class="csl-entry" role="listitem">
+Deng, Jia-Rui, Xiao-Tong Zhang, Nan Wang, Jie-Ping Chen, and Zhuo-Ming Chen. 2025. <span>“Atypical Face Recognition and Hemispheric Lateralization in Autism Spectrum Disorder with <span>N170</span> Signatures: A Systematic Review and Meta-Analysis.”</span> Journal Article. <em>Review Journal of Autism and Developmental Disorders</em>, ahead of print. <a href="https://doi.org/10.1007/s40489-025-00502-4">https://doi.org/10.1007/s40489-025-00502-4</a>.
+</div>
+<div id="ref-eimer2011" class="csl-entry" role="listitem">
+Eimer, Martin. 2011. <span>“The Face-Sensitive <span>N170</span> Component of the Event-Related Brain Potential.”</span> Book Section to <em>The Oxford Handbook of Face Perception</em>, edited by A. J. Calder, G. Rhodes, M. H. Johnson, and J. V. Haxby. Oxford University Press. <a href="https://doi.org/10.1093/oxfordhb/9780199559053.013.0017">https://doi.org/10.1093/oxfordhb/9780199559053.013.0017</a>.
+</div>
+<div id="ref-gao2019" class="csl-entry" role="listitem">
+Gao, C., S. Conte, J. E. Richards, W. Xie, and T. Hanayik. 2019. <span>“The Neural Sources of <span>N170</span>: Understanding Timing of Activation in Face-Selective Areas.”</span> Journal Article. <em>Psychophysiology</em> 56 (6): e13336. <a href="https://doi.org/10.1111/psyp.13336">https://doi.org/10.1111/psyp.13336</a>.
+</div>
+<div id="ref-huang2026" class="csl-entry" role="listitem">
+Huang, W., Y. Wang, X. Chen, S. Liu, Z. Qu, and Y. Ding. 2026. <span>“The <span>N170</span> Is Linked to Configural Face Processing: Evidence from the <span>N170</span> Adaptation Effect for Upright Faces.”</span> Journal Article. <em>Psychophysiology</em> 63 (1): e70238. <a href="https://doi.org/10.1111/psyp.70238">https://doi.org/10.1111/psyp.70238</a>.
+</div>
 <div id="ref-kappenman2021" class="csl-entry" role="listitem">
 Kappenman, Emily S., Jaclyn L. Farrens, Wendy Zhang, Andrew X. Stewart, and Steven J. Luck. 2021. <span>“<span>ERP CORE</span>: <span>An</span> Open Resource for Human Event-Related Potential Research.”</span> <em>NeuroImage</em> 225 (January): 117465. <a href="https://doi.org/10.1016/j.neuroimage.2020.117465">https://doi.org/10.1016/j.neuroimage.2020.117465</a>.
+</div>
+<div id="ref-kropotov2016" class="csl-entry" role="listitem">
+Kropotov, Juri D. 2016. <em>Functional Neuromarkers for Psychiatry: Applications for Diagnosis and Treatment</em>. Book. Functional Neuromarkers for Psychiatry: Applications for Diagnosis and Treatment. Elsevier Academic Press.
+</div>
+<div id="ref-pascalis2020" class="csl-entry" role="listitem">
+Pascalis, Olivier, Mathilde Fort, Jonathan E. Prunty, and David J. Kelly. 2020. <span>“Face Processing.”</span> Book Section to <em>Encyclopedia of Infant and Early Childhood Development</em>. <a href="https://doi.org/10.1016/b978-0-12-809324-5.23264-1">https://doi.org/10.1016/b978-0-12-809324-5.23264-1</a>.
+</div>
+<div id="ref-prieto2011" class="csl-entry" role="listitem">
+Prieto, E. A., S. Caharel, R. Henson, and B. Rossion. 2011. <span>“Early <span class="nocase">(n170/m170)</span> Face-Sensitivity Despite Right Lateral Occipital Brain Damage in Acquired Prosopagnosia.”</span> Journal Article. <em>Frontiers in Human Neuroscience</em> 5: 138. <a href="https://doi.org/10.3389/fnhum.2011.00138">https://doi.org/10.3389/fnhum.2011.00138</a>.
+</div>
+<div id="ref-rossion1999" class="csl-entry" role="listitem">
+Rossion, B., J. F. Delvenne, D. Debatisse, et al. 1999. <span>“Spatio-Temporal Localization of the Face Inversion Effect: An Event-Related Potentials Study.”</span> Journal Article. <em>Biological Psychology</em> 50 (3): 173–89. <a href="https://doi.org/10.1016/s0301-0511(99)00013-7">https://doi.org/10.1016/s0301-0511(99)00013-7</a>.
+</div>
+<div id="ref-rossion2011" class="csl-entry" role="listitem">
+Rossion, Bruno, and Stéphanie Caharel. 2011. <span>“<span>ERP</span> Evidence for the Speed of Face Categorization in the Human Brain: Disentangling the Contribution of Low-Level Visual Cues from Face Perception.”</span> Journal Article. <em>Vision Research</em> 51 (12): 1297–311. <a href="https://doi.org/10.1016/j.visres.2011.04.003">https://doi.org/10.1016/j.visres.2011.04.003</a>.
+</div>
+<div id="ref-sadeh2010" class="csl-entry" role="listitem">
+Sadeh, B., and G. Yovel. 2010. <span>“Why Is the <span>N170</span> Enhanced for Inverted Faces? An <span>ERP</span> Competition Experiment.”</span> Journal Article. <em>NeuroImage</em> 53 (2): 782–89. <a href="https://doi.org/10.1016/j.neuroimage.2010.06.029">https://doi.org/10.1016/j.neuroimage.2010.06.029</a>.
+</div>
+<div id="ref-srebro1985" class="csl-entry" role="listitem">
+Srebro, R. 1985. <span>“Localization of Cortical Activity Associated with Visual Recognition in Humans.”</span> Journal Article. <em>The Journal of Physiology</em> 360: 247–59. <a href="https://doi.org/10.1113/jphysiol.1985.sp015615">https://doi.org/10.1113/jphysiol.1985.sp015615</a>.
+</div>
+<div id="ref-vekony2017" class="csl-entry" role="listitem">
+Vékony, Teodóra, and Gábor Csifcsák. 2017. <em>Hemispheric Lateralization of the <span>N170</span> Inversion Effect for Faces and Words</em>. Conference Paper.
 </div>
 </div></section></div></main>
 <!-- /main column -->

@@ -12,7 +12,7 @@ format:
 execute:
     warning: false
     message: false
-bibliography: "erp_report.bib"
+bibliography: "references.bib"
 ---
 
 ## Setup
@@ -38,35 +38,30 @@ PROCESSED_PATH = Path("data/processed")
 
 ## Introduction
 
-Adding some text to the begining of the intro, to demonstrate a comit and push
+The N170 is a negative-going event related potential (ERP) component measured using electroencephalography (EEG), beginning around 130 ms with a typical peak latency of approximately 170 ms following stimulus onset [@cashon2015; @prieto2011]. The N170 is commonly referred to as a face-sensitive response, eliciting a larger negative deflection in wave amplitudes to faces than non-face objects [@eimer2011]. The N170’s topography is most apparent over lateral posterior occipito-temporal scalp regions, and commonly exhibits right hemispheric lateralisation, with greater amplitudes over the right hemisphere than left [@deng2025; @kropotov2016; @prieto2011]. This rightward bias may reflect the broader organisation of cortical face-processing networks, with neuroimaging evidence implicating the right fusiform face area in facial processing, while the left fusiform regions are associated with visual word-form processing [@prieto2011; @vekony2017].
 
-Provide an introduction to the ERP component of your choice here. This should include a brief literature review -- see report instructions for details.
-Use appropriate subheadings as required: adapt the ones below, create new ones or delete as needed.
+@srebro1985 initially linked early EEG responses to facial perception, later explored by @botzel1995 who identified prominent negative peaks at posterior-temporal electrodes at approximately 175 ms following face presentation. Dipole source localisation suggested that face perception may involve distributed sequential activation of occipital, lateral temporal and mesio-temporal brain structures. @bentin1996 provided greater detail, reporting a negative potential latency of 172 ms, termed the N170. The response to facial stimuli was largest over posterior-temporal regions, particularly in the right hemisphere. Furthermore, isolated eyes elicited a larger N170 than whole faces, while isolated lips or noses elicited smaller ERP responses, suggesting the N170 may be modulated by specific facial features rather than the whole face alone. Bentin et al.'s [-@bentin1996] findings suggest the N170 reflects early detection and structural encoding of faces rather than facial identity recognition. Expanding on Bötzel et al.'s [-@botzel1995] earlier source-localisation findings, @gao2019 utilised high-density ERP source localisation and fMRI, identifying the middle and posterior fusiform gyri as primary neural sources of the face-sensitive N170.
 
-### Intro subheading 1
+Continuing Bentin et al.'s [-@bentin1996] early structural interpretations, the N170 is commonly associated with early configural face processing, particularly the spatial relationship and configuration of facial features [@eimer2011; @pascalis2020]. However, the exact underlying neural mechanisms remain debated, particularly in regard to the face inversion effect. Face-inversion disrupts normal configural processing, with greater dependence on individual featural processing, rather than spatial configuration between features [@pascalis2020], with inverted faces producing larger N170 amplitudes and delayed latencies than upright faces [@cashon2015; @eimer2011]. The delayed latency reflects disrupted configural processing [@eimer2011; @rossion1999], while the increased amplitude has two broad interpretations [@sadeh2010]. @rossion1999 suggest that inversion increases activity within the same processing pathways implicated in upright face processing, due to the increased processing difficulty. Alternatively, @sadeh2010 suggest that inversion recruits additional neural processes, such as object-general and eye-specific processing, which may contribute to the increased amplitude. Eye-specific processing’s involvement is consistent with Bentin et al.'s [-@bentin1996] earlier findings of larger N170 amplitudes to isolated eyes than whole faces. @huang2026 further suggested that distinct neural populations contribute to the N170, noting that some populations more sensitive to inverted faces may process salient features, such as the eyes, while others are tuned to upright faces, engaging in configural processing and high-level facial image pattern analysis, supporting the interpretation that the N170 may reflect multiple underlying neural processes rather than configural processing alone.
 
-### Intro subheading 2
 
 ## Methods
 
-Complete the following subsections using the information from @kappenman2021. Don't forget to mention that the data are from the ERP CORE resource under a Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0). 
-
 ### Participants
 
-Provide information on the number of participants and their demographics (sex, age, handedness) as well as the inclusion criteria for the study.
+@kappenman2021 recruited 40 participants (aged 18-30) from the University of California, Davis community (15 male, 25 female), with a mean age of 21.5 years (SD = 2.87). Participants had native English competence, normal colour perception, normal to corrected vision, and no self-reported history of neurological disease or injury. Thirty-eight participants were right-handed. @kappenman2021 excluded participants if artifacts were identified on more than 25% of trials, if task accuracy was below 75%, or if fewer than 50% of trials remained in any one condition. Following these exclusion criteria, participants 001 and 016 were omitted because fewer than 50% of face trials remained following artifact rejection, while participant 006 was omitted because artifacts were identified on more than 25% of trials. This resulted in a final N170 sample of 37 participants aged 18-30 (13 male, 24 female), with a mean age of 21.57 years (SD = 2.97), 35 of whom were right-handed, while two were left-handed.
 
 ### Procedure
 
-Describe the task that participants completed. This should be tailored to the task / component that you chose to analyse.
+Data were obtained from Kappenman et al.'s [-@kappenman2021] ERP CORE resource, available under the Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) licence. The N170 data were collected following a face perception task adapted by @kappenman2021 from @rossion2011. Each trial involved participants viewing and responding to centrally positioned images of either a face, car, scrambled face, or scrambled car, determining if the stimulus was either a texture (scrambled face or scrambled car), or an object (face or car). @kappenman2021 compared N170 ERP responses to faces and cars.
 
 ### EEG recording
 
-Describe the EEG recording parameters: amplifier and type of cap used, electrode positions, CMS / DRL electrode positions, EOG electrode positions, and filter parameters.
+Continuous EEG was recorded using a BioSemi ActiveTwo system, with 30 active scalp electrodes mounted in an elastic cap. The electrode positioning followed the International 10/20 system (FP1, F3, F7, FC3, C3, C5, P3, P7, P9, PO7, PO3, O1, Oz, Pz, CPz, FP2, Fz, F4, F8, FC4, FCz, Cz, C4, C6, P4, P8, P10, PO8, PO4, O2). The common mode sense (CMS) electrode was located at PO1, and the driven right leg (DRL) at PO2. Horizontal electrooculograms were positioned at the lateral to the external canthus of each eye, while the vertical electrooculogram were positioned below the right eye. Signals were low-pass filtered using a fifth order sinc filter with a half-power cutoff of 204.8 Hz and later digitised at 1024 Hz with 24-bit resolution [@kappenman2021].
 
 ### Analysis parameters
 
-Choose these parameters appropriate for the component that you are analysing. Use those recommended by @kappenman2021; see their Table 1. This holds for all parameters except for the filter parameters; for these, you can stick to the example parameters provided below.
-Describe the parameters in this section and also modify the code accordingly
+For the present N170 analysis, EEG data were re-referenced using an average reference, then filtered between 0.1 to 30 Hz, mirroring Kappenman et al.'s [-@kappenman2021] N170 average-reference approach. Epoch parameters were stimulus-locked ranging from -200 to 800 ms relative to onset, with a -200 to 0 ms baseline interval. EEG trials exceeding 150 µV (150e-6 V), and EOG exceeding 250 µV (250e-6 V) were rejected. Face and car trials were independently averaged, with grand-average activity examined at PO8, following Kappenman et al.'s [-@kappenman2021] recommended N170 measurement window of 110-150 ms. Following the exclusion criteria, three participants were omitted prior to averaging, resulting in a final analysis sample of 37 participants. To account for LCD monitor delay, @kappenman2021 corrected event codes, while the present analysis shifted the measurement window by 26 ms, from 110-150 ms to 136-176 ms.
 
 #### Preprocessing parameters
 
@@ -126,7 +121,7 @@ for raw_file in RAW_PATH.glob("*_raw.fif.gz"):
 
 ```
 
-Raw EEG files were preprocessed using the analysis pipeline developed throughout the course, re-refferencing the data using an avarage referenceped throughout the course later adapting parameters for the N170 referenced against the average refrence for the N170following the previously outlinned preprocessing steps in the method's section.
+Raw EEG data were pre-processed using the analysis pipeline developed throughout the course, re-referencing the data using an average reference and applying a band-pass filter between 0.1 and 30 Hz.
 
 ### Epoching and averaging
 
@@ -167,6 +162,8 @@ for processed_file in PROCESSED_PATH.glob("*_raw.fif.gz"):
 
 ```
 
+Processed EEG data were epoched around stimulus-locked events, ranging from -200 ms before stimulus onset to 800 ms following onset, with -200 to 0 ms used as the baseline interval. EEG or EOG trials exceeding their aforementioned thresholds (150 µV and 250 µV, respectively) were excluded. Following participant exclusion, face and car trials were separated and independently averaged for each of the 37 final participants.
+
 ### Grand average
 
 ```{python}
@@ -184,9 +181,13 @@ for cond in CONDITIONS:
 
 ### Grand average: expected effect
 
-Plot the electrode deemed most representative for the effect by @kappenman2021.
-Set the parameters for the specified analysis window, which will include dotted vertical lines marking the analysis window on the plot.
-Note: for some components, @kappenman2021 refer to two electrode sites. If this is the case for your chosen component, the analysis requires a consideration of lateralisation; please make an appointment to discuss the required analysis tweaks with Ina.
+Averages across the final 37 participants were combined, forming grand-average ERP responses for both the face and car stimulus conditions.
+
+Figure 1 visualises the N170 grand average ERPs for face and car stimuli measured at PO8 using the adjusted measurement window of 136-176 ms. Within this time window, both conditions begin at positive amplitudes before crossing baseline, after which both conditions show a sharp negative-going deflection. The face condition shows a slightly larger and earlier negative peak than the car condition, whose peak occurs slightly outside the end of the 176 ms time window.
+
+Before the time window, both conditions fluctuate before showing a positive-going deflection, with the face condition peaking sooner than the car condition, whose positive peak occurs near the beginning of the time window. The face condition then returns toward baseline earlier and more sharply than the car condition, with both waveforms becoming increasingly separated. 
+
+Following their negative peaks inside the time window for faces and slightly outside the time window for cars, both waveforms follow similar positive-going deflections, passing baseline, and continuing to a large positive peak, before gradually fluctuating and returning toward baseline and later crossing into negative voltages. Both waveforms continued fluctuating in later portions of the epoch recording; however, these occurred beyond the N170 time window and were not examined further.
 
 #### **Figure 1**  
 
@@ -204,15 +205,18 @@ plot_evokeds(grand_avs, picks = selected_electrode, invert_y = True, title = plo
 
 ## Discussion and reflection
 
-Provide a brief discussion of the effect that you observed. Were you able to replicate the ERP component as observed by @kappenman2021? If not, what was different in your grand average ERP? 
+The present study broadly replicated Kappenman et al.'s [-@kappenman2021] ERP grand-average findings, with the face condition producing a slightly larger and earlier negative N170 peak than the car condition at PO8. @kappenman2021 similarly reported a larger and earlier N170 for faces than cars, most pronounced over the right inferotemporal region.
 
-What did you learn by applying the analysis process to a new dataset?
+@kappenman2021 corrected event codes for LCD delay, while the present analysis shifted the N170 window by 26 ms from 110-150 ms to 136-176 ms. Within this adjusted window, the face condition peaked, while the car condition peaked slightly outside the upper boundary, reflecting the latency differences between conditions, consistent with @kappenman2021, and wider literature indicating larger negative N170 responses to faces than non-face objects [@bentin1996; @eimer2011].
+
+Small amplitude and waveform differences may reflect preprocessing differences. @kappenman2021 applied ICA-based artifact correction, participant-specific thresholds, noisy channel interpolation and additional 20 Hz low-pass filtering, potentially smoothing their grand-average waveforms. Comparatively, the present analysis employed a simplified pipeline, including average re-referencing, 0.1-30 Hz filtering, fixed rejection criteria, epoching, baseline correction and participant exclusion. Despite supporting larger N170 responses to faces than non-face objects, the findings provide limited insight into whether the effects reflect featural, configural or object-processing mechanisms, which future research should aim to clarify.
+
+Applying and modifying the EEG pipeline for N170 analysis helped develop my understanding of preprocessing, epoching, and averaging, and their influence on the final grand average and its interpretation. Adapting small methodological decisions, from exclusion criteria and filter cutoffs to shifting measurement windows, further demonstrated their impact on analysis. Learning how to transform raw EEG data into finalised grand-average ERPs improved my comprehension of EEG analysis and interpretation, providing knowledge transferable to future research. Rather than relying solely on another study’s discussion and conclusions, applying the analysis myself deepened my understanding of how such conclusions are reached.
+
 
 ## Statement of use of Generative AI
 
-Generative AI was not used for the creation of this project. 
+AI (ChatGPT; OpenAI) was used to support the development of this report, primarily for troubleshooting and understanding Python/Quarto/Markdown/YAML code, checking that EndNote’s reference output matches the .bib file, alongside understanding and learning how to reference with Quarto using Week 10 course material, as I was absent that week. Minor proofreading and grammar correction were also used; however majority of suggestions were rejected, rather opting to use word's inbuilt processes. All code used reflects the continually developed EEG pipeline created in class, rather than code generated by AI.
 
 ## References
-
-*Note: this document is set up to automatically generate a reference list via a bib file. We will look at how to do this in the week 9 workshop.*
 
