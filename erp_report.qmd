@@ -183,12 +183,6 @@ for cond in CONDITIONS:
 
 Averages across the final 37 participants were combined, forming grand-average ERP responses for both the face and car stimulus conditions.
 
-Figure 1 visualises the N170 grand average ERPs for face and car stimuli measured at PO8 using the adjusted measurement window of 136-176 ms. Within this time window, both conditions begin at positive amplitudes before crossing baseline, after which both conditions show a sharp negative-going deflection. The face condition shows a slightly larger and earlier negative peak than the car condition, whose peak occurs slightly outside the end of the 176 ms time window.
-
-Before the time window, both conditions fluctuate before showing a positive-going deflection, with the face condition peaking sooner than the car condition, whose positive peak occurs near the beginning of the time window. The face condition then returns toward baseline earlier and more sharply than the car condition, with both waveforms becoming increasingly separated. 
-
-Following their negative peaks inside the time window for faces and slightly outside the time window for cars, both waveforms follow similar positive-going deflections, passing baseline, and continuing to a large positive peak, before gradually fluctuating and returning toward baseline and later crossing into negative voltages. Both waveforms continued fluctuating in later portions of the epoch recording; however, these occurred beyond the N170 time window and were not examined further.
-
 #### **Figure 1**  
 
 ```{python}
@@ -202,6 +196,12 @@ plot_evokeds(grand_avs, picks = selected_electrode, invert_y = True, title = plo
 
 
 ```
+
+Figure 1 visualises the N170 grand average ERPs for face and car stimuli measured at PO8 using the adjusted measurement window of 136-176 ms. Within this time window, both conditions begin at positive amplitudes before crossing baseline, after which both conditions show a sharp negative-going deflection. The face condition shows a slightly larger and earlier negative peak than the car condition, whose peak occurs slightly outside the end of the 176 ms time window.
+
+Before the time window, both conditions fluctuate before showing a positive-going deflection, with the face condition peaking sooner than the car condition, whose positive peak occurs near the beginning of the time window. The face condition then returns toward baseline earlier and more sharply than the car condition, with both waveforms becoming increasingly separated. 
+
+Following their negative peaks inside the time window for faces and slightly outside the time window for cars, both waveforms follow similar positive-going deflections, passing baseline, and continuing to a large positive peak, before gradually fluctuating and returning toward baseline and later crossing into negative voltages. Both waveforms continued fluctuating in later portions of the epoch recording; however, these occurred beyond the N170 time window and were not examined further.
 
 ## Discussion and reflection
 
